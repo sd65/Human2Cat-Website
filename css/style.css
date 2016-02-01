@@ -1,0 +1,19 @@
+textarea {
+    resize: none;
+}
+
+button {
+	margin-top: .5em;
+}
+
+#background {
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+
+#logo {
+	height: 25px;
+	display: inline;
+	padding-right: .3em;
+}

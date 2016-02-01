@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Human2Cat</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+
+<canvas id="background">
+ 
+</canvas>
+
+<div class="container">
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img id="logo" src="logo.png"/>Human2Cat</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Translator</a></li>
+          <li><a href="#">How it works</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="../navbar-fixed-top/">More</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+
+  <div class="row">
+    <div class="col-md-6">
+      <h2>Human language</h2>
+      <textarea autocomplete="off" class="form-control" rows="16" id="human">Can you read this test?</textarea>
+      <button type="button" onClick="human2cat()" class="btn btn-default btn-lg btn-block">Translate to Cat &#8674;</button>
+    </div>
+    <div class="col-md-6">
+      <h2>Cat language</h2>
+      <textarea autocomplete="off" class="form-control" rows="16" id="cat"></textarea>
+      <button type="button" onClick="cat2human()" class="btn btn-default btn-lg btn-block">&#8672; Translate to Human</button>
+    </div>
+  </div>
+
+
+
+
+</div> <!-- /container -->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/trianglify.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
